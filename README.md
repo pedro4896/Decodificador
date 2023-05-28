@@ -76,7 +76,7 @@
 
 <h2>Créditos</h2>
 <p>
-  Este aplicativo foi desenvolvido como um projeto baseado no "Challenger Decodificador" da Alura e não deve ser usado para fins de segurança real. O código-fonte foi baseado em exemplos e tutoriais disponíveis online.
+  Este aplicativo foi desenvolvido como um projeto baseado no "Challenger Decodificador de Texto" da Alura e não deve ser usado para fins de segurança real. O código-fonte foi baseado em exemplos e tutoriais disponíveis online.
 </p>
 
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=0A3871&height=120&section=footer"/>
