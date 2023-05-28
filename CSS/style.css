@@ -1,0 +1,535 @@
+body,html{
+    height: 100%;
+    background: #000;
+}
+
+section{
+    height: 100vh;
+    background: #000;
+    color: #fff;
+}
+
+.cursor {
+    position: fixed;
+    display: inline-block;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+::selection{
+    background-color: #fff; /* Cor de fundo da seleção */
+    color: #000; /* Cor do texto selecionado */
+}
+
+.selection-alura::selection{
+    background-color: #0A3871;
+    color: #fff;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+.placeholder-alura::placeholder{
+    color: #0A3871;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.alura-scrollbar-thumb::-webkit-scrollbar-thumb {
+    background-color: #0A3871;
+}
+
+.alura-scrollbar-thumb-hover::-webkit-scrollbar-thumb:hover {
+    background-color: #0e51a8;
+}
+
+#controladores{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    height: 100vh;
+    padding: 40px 0;
+}
+
+#nav-principal{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#img-controladores{
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0 auto;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    flex: none;
+    flex-grow: 0;
+    margin: 0 auto;
+    width: 72px;
+    height: 128px;
+    background: #262626;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
+    border-radius: 800px;
+}
+
+#controladores button{
+    outline: none;
+}
+
+button.icone{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.7s;
+}
+
+#escrever{
+    background: url(../Imagens/Alvorecer_Texto_Black.svg),#fff;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#voz{
+    background: url(../Imagens/Voz_White.svg),transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#code_alvorecer{
+    background: url(../Imagens/Alvorecer_Icon_Black.svg),#fff;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#alura{
+    background: url(../Imagens/Alura_Icon_White.svg),transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#entrada{
+    padding: 40px 0;
+}
+
+#texto textarea{
+    position: absolute;
+    width: 96%;
+    height: 65%;
+    left: 2%;
+    top: 15%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    padding-left: 10px;
+    color: #fff;
+    border: 0;
+    background: transparent;
+    resize: none;
+    outline: none;
+}
+
+#aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: 252px;
+    height: 18px;
+    left: 2%;
+    top: 81%;
+}
+
+#aviso img{
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#aviso span{
+    width: 228px;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 96%;
+    height: 67px;
+    left: 2%;
+    top: 86%;
+}
+
+#botoes button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 48%;
+    height: 67px;
+
+    flex: none;
+    flex-grow: 0;
+
+    border: 0;
+    border-radius: 24px;
+    outline: none;
+
+    cursor: pointer;
+}
+
+#botoes button#criptografar{
+    color: #000;
+    background: #fff;
+}
+
+#botoes button#descriptografar{
+    color: #fff;
+    border: 1px solid #FFFFFF;
+    background: #000;
+}
+
+#botoes span{
+    width: 280px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+}
+
+#saida{
+    margin: 20px 0;
+    background: #262626;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#saida img{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-30%);
+    width: 70%;
+}
+
+#mensagem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 80%;
+    height: 122px;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%,-72%);
+}
+
+#titulo-mensagem{
+    width: 80%;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#instrucao-mensagem{
+    width: 80%;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#texto-saida{
+    display: none;
+}
+
+#texto-saida textarea{
+    position: absolute;
+    width: 96%;
+    height: 82.5%;
+    left: 2%;
+    top: 3%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    padding-left: 10px;
+    color: #fff;
+    border: 0;
+    background: transparent;
+    resize: none;
+    outline: none;
+}
+
+#texto-saida button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 80%;
+    height: 50px;
+
+    flex: none;
+    flex-grow: 0;
+
+    border-radius: 24px;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+#texto-saida span{
+    width: 280px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1px;
+    text-align: center;
+}
+
+/*Medium devices (tablets, 768px e maiores)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #controladores{
+        flex-direction: row;
+        width: 100vw;
+        height: auto;
+        padding: 40px  40px 0px 40px ;
+    }
+
+    #nav-principal{
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    
+    .menu{
+        flex-direction: row;
+        width: 128px;
+        height: 72px;
+    }
+
+    #entrada{
+        height: 50vh;
+    }
+    
+    #texto textarea{
+        padding: 20px;
+        width: 96%;
+        height: 80%;
+        top: 2%;
+    }
+    
+    #aviso{
+        top: 85%;
+    }
+    
+    #botoes{
+        top: 95%;
+        justify-content: center;
+    }
+    
+    #botoes button{
+        width: 35%;
+        height: 40px;
+    }
+     
+    #botoes span{
+        line-height: 2px;
+    }
+
+    #saida{
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%);
+        height: 25vh;
+        width: 80vw;
+    }
+    
+    #mensagem{
+        position: absolute;
+        width: 80%;
+        height: 80px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    #titulo-mensagem{
+        height: 20px;
+        line-height: 200%;
+    }
+    
+    #instrucao-mensagem{
+        width: 100%;
+        height: 20px;
+        line-height: 300%;
+    }
+
+    #img-saida{
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #controladores{
+        flex-direction: row;
+        width: 100vw;
+        height: auto;
+        padding: 40px  40px 0px 40px ;
+    }
+
+    #img-controladores button{
+        width: 80px;
+        height: 80px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin: 0 auto;
+        outline: none;
+    }
+    
+    .menu{
+        flex-direction: row;
+        width: 128px;
+        height: 72px;
+        float: left;
+        box-sizing: border-box;
+        margin: 10px;
+    }
+
+    #entrada{
+        height: 50vh;
+        clear: both;
+    }
+    
+    #botoes{
+        top: 90%;
+        justify-content: center;
+    }
+    
+    #botoes button{
+        width: 45%;
+        height: 40px;
+    }
+     
+    #botoes span{
+        font-size: 20px;
+        line-height: 1px;
+    }
+
+    #saida{
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%);
+        height: 25vh;
+        width: 80vw;
+    }
+    
+    #mensagem{
+        position: absolute;
+        width: 80%;
+        height: 80px;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%,-25%);
+    }
+    
+    #titulo-mensagem{
+        width: 100%;
+        height: auto;
+        line-height: 150%;
+    }
+    
+    #instrucao-mensagem{
+        width: 100%;
+        height: auto;
+        line-height: 150%;
+    }
+
+    #img-saida{
+        display: none;
+    }
+}
