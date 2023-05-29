@@ -9,6 +9,21 @@ const voz = document.getElementById("voz");
 const code_alvorecer = document.getElementById("code_alvorecer");
 const alura = document.getElementById("alura");
 
+const background = document.querySelector('section');
+const menus = document.querySelectorAll('.menu');
+const logo = document.querySelector("#logo");
+const link_img = document.getElementById("link-img");
+const textos = document.querySelectorAll('textarea');
+const selecao = document.querySelectorAll('*');
+const img_aviso = document.querySelector("#img-aviso");
+const texto_aviso = document.querySelector('#aviso span');
+const btn_criptografar =  document.querySelector("#botoes button#criptografar");
+const btn_descriptografar =  document.querySelector("#botoes button#descriptografar");
+const saida = document.getElementById("saida");
+const imagem_saida = document.querySelector("#img-saida img");
+const saida_textos = document.querySelector('#saida textarea');
+const botao_saida = document.querySelector("#texto-saida button");
+
 var reconhecimento;
 var comandoVoz = false;
 
@@ -372,21 +387,6 @@ function SortearChaveCifra(){
 }
 
 function updateCSS(cor){
-    const background = document.querySelector('section');
-    const menus = document.querySelectorAll('.menu');
-    const logo = document.querySelector("#logo");
-    const link_img = document.getElementById("link-img");
-    const textos = document.querySelectorAll('textarea');
-    const selecao = document.querySelectorAll('*');
-    const img_aviso = document.querySelector("#img-aviso");
-    const texto_aviso = document.querySelector('#aviso span');
-    const btn_criptografar =  document.querySelector("#botoes button#criptografar");
-    const btn_descriptografar =  document.querySelector("#botoes button#descriptografar");
-    const saida = document.getElementById("saida");
-    const imagem_saida = document.querySelector("#img-saida img");
-    const saida_textos = document.querySelector('#saida textarea');
-    const botao_saida = document.querySelector("#texto-saida button");
-
    if(cor == 'Code_Alvorecer'){
     console.log("Code_Alvorecer");
     btn_alura = false;
