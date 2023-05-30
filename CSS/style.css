@@ -356,7 +356,6 @@ button.icone{
         align-items: center;
         height: 10vh;
         padding: 40px 0;
-        border: 1px solid red;
         margin: 2% 0;
     }
 
@@ -395,7 +394,6 @@ button.icone{
         position: relative;
         height: 50vh;
         padding: 10px 0;
-        border: 1px solid red;
         margin-bottom: 2% 0;
     }
 
@@ -425,7 +423,6 @@ button.icone{
 
     #saida{
         position: relative;
-        border: 1px solid red;
         margin-top: 10px;
         width: 100%;
         height: 32vh;
@@ -461,7 +458,6 @@ button.icone{
     }
     
     #texto-saida textarea{
-        border: 1px solid red;
         position: absolute;
         width: 96%;
         height: 70%;
