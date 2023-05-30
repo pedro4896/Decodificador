@@ -13,6 +13,7 @@ const background = document.querySelector('section');
 const menus = document.querySelectorAll('.menu');
 const logo = document.querySelector("#logo");
 const link_img = document.getElementById("link-img");
+const img_hamburguer = document.getElementById("img-hamburguer");
 const textos = document.querySelectorAll('textarea');
 const selecao = document.querySelectorAll('*');
 const img_aviso = document.querySelector("#img-aviso");
@@ -399,6 +400,7 @@ function updateCSS(cor){
 
     logo.src = './Imagens/Code_Alvorecer.png';
     link_img.href = 'https://www.instagram.com/code_alvorecer/';
+    img_hamburguer.src = './Imagens/collapse_White.svg';
     img_aviso.src = './Imagens/Alvorecer_Aviso.svg';
 
     texto_aviso.style.color = '#fff';
@@ -436,6 +438,7 @@ function updateCSS(cor){
     code_alvorecer.style.backgroundPosition = "center";
     code_alvorecer.style.backgroundRepeat = "no-repeat";
    }
+
    else{
     console.log("Alura");
     btn_alura = true;
@@ -447,6 +450,7 @@ function updateCSS(cor){
 
     logo.src = './Imagens/Alura.png';
     link_img.href = 'https://www.alura.com.br';
+    img_hamburguer.src ='./Imagens/collapse_Blue.svg';
     img_aviso.src = './Imagens/Alura_Aviso.svg';
 
     texto_aviso.style.color = '#495057';

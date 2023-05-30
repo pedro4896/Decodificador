@@ -344,12 +344,163 @@ button.icone{
     text-align: center;
 }
 
-@media (max-width: 767.98px) {
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media (max-width: 575.98px) {
+    #controladores{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 10vh;
+        padding: 40px 0;
+        margin: 2% 0;
+    }
 
+    .container-img{
+        position: relative;
+        height: 10vh;
+        width: 10vw;
+        padding: 10px;
+    }
+
+    #logo{
+        position: absolute;
+        top: 0%;
+        left: 0;
+        transform: translate(50%,-50%);
+        max-height: 100%;
+        width: auto;
+    }
+
+    #img-hamburguer{
+        position: absolute;
+        top: 0%;
+        right: 0;
+        transform: translate(-50%,-50%);
+        max-height: 100%;
+        width: auto;
+    }
+
+    #nav-principal{
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right: 10px;
+        padding: 10px;
+        z-index: 1;
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 128px;
+        height: 72px;
+        margin: 10px 20px;
+        float: left;
+    }
+    
+    #controladores button{
+        outline: none;
+    }
+
+    #img-hamburguer{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    button.navbar-toggler.navbar-light{
+        border: 0;
+    }
+
+    #entrada{
+        position: relative;
+        height: 50vh;
+        padding: 10px 0;
+        margin-bottom: 2%;
+        
+    }
+    
+    #texto textarea{
+        left: 2%;
+        top: 1%;
+        width: 96%;
+        height: 70%;
+    }
+    
+    #aviso{
+        top: 73%;
+        width: auto;
+        height: 5%;
+    }
+    
+    #botoes{
+        position: absolute;
+        width: 96%;
+        height: 67px;
+        left: 1%;
+        top: 81%;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin: 0 auto;
+    }
+    
+    #entrada #botoes span{
+        width: 100%;
+        height: auto;
+        font-size: 100%;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    #saida{
+        position: relative;
+        margin-top: 20px;
+        width: 100%;
+        height: 32vh;
+        background: #262626;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.25);
+        border-radius: 32px;
+    }
+    
+    #saida img{
+       display: none;
+    }
+    
+    #mensagem{
+        width: 100%;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    #titulo-mensagem{
+        font-size: 30px;
+        height: auto;
+    }
+    
+    #instrucao-mensagem{
+        font-size: 20px;
+        height: auto;
+    }
+    
+    #texto-saida{
+        display: none;
+    }
+    
+    #texto-saida textarea{
+        position: absolute;
+        width: 96%;
+        height: 70%;
+        top: 1%;
+    }
+    
+    #texto-saida button{
+        top: 75%;
+        width: 80%;
+    }
 }
 
+
 /*Medium devices (tablets, 768px e maiores)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 991.98px) {
     #controladores{
         display: flex;
         flex-direction: row;
