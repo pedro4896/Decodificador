@@ -445,7 +445,7 @@ function updateCSS(cor){
         menu.style.backgroundColor = '#fff';
     });
 
-    logo.src = './Imagens/Alura.svg';
+    logo.src = './Imagens/Alura.png';
     link_img.href = 'https://www.alura.com.br';
     img_aviso.src = './Imagens/Alura_Aviso.svg';
 

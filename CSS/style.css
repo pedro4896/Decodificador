@@ -1,3 +1,9 @@
+*{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
 body,html{
     height: 100%;
     background: #000;
@@ -12,9 +18,6 @@ section{
 .cursor {
     position: fixed;
     display: inline-block;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     color: #fff;
 }
@@ -61,7 +64,7 @@ section{
 #controladores{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 0px;
     height: 100vh;
     padding: 40px 0;
@@ -71,16 +74,11 @@ section{
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-#img-controladores{
-    width: 80px;
-    height: 80px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0 auto;
+#logo{
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .menu{
@@ -91,11 +89,10 @@ section{
     gap: 16px;
     flex: none;
     flex-grow: 0;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 72px;
     height: 128px;
     background: #262626;
-    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
     border-radius: 800px;
 }
 
@@ -148,9 +145,6 @@ button.icone{
     height: 65%;
     left: 2%;
     top: 15%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 32px;
     line-height: 150%;
     padding-left: 10px;
@@ -186,9 +180,6 @@ button.icone{
 #aviso span{
     width: 228px;
     height: 18px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 150%;
     opacity: 0.8;
@@ -209,6 +200,7 @@ button.icone{
     height: 67px;
     left: 2%;
     top: 86%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #botoes button{
@@ -245,9 +237,6 @@ button.icone{
 #botoes span{
     width: 280px;
     height: 19px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 19px;
     text-align: center;
@@ -256,7 +245,7 @@ button.icone{
 #saida{
     margin: 20px 0;
     background: #262626;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
 }
 
@@ -286,9 +275,6 @@ button.icone{
 #titulo-mensagem{
     width: 80%;
     height: 58px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
     font-size: 24px;
     line-height: 120%;
     margin: 0 auto;
@@ -298,9 +284,6 @@ button.icone{
 #instrucao-mensagem{
     width: 80%;
     height: 58px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     text-align: center;
@@ -317,9 +300,6 @@ button.icone{
     height: 82.5%;
     left: 2%;
     top: 3%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 32px;
     line-height: 150%;
     padding-left: 10px;
@@ -359,177 +339,137 @@ button.icone{
 #texto-saida span{
     width: 280px;
     height: 19px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 1px;
     text-align: center;
 }
 
+@media (max-width: 767.98px) {
+
+}
+
 /*Medium devices (tablets, 768px e maiores)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
     #controladores{
+        display: flex;
         flex-direction: row;
-        width: 100vw;
-        height: auto;
-        padding: 40px  40px 0px 40px ;
+        align-items: center;
+        height: 10vh;
+        padding: 40px 0;
+        border: 1px solid red;
+        margin: 2% 0;
     }
 
+    .container-img{
+        position: relative;
+        height: 13vh;
+        width: 10vw;
+        padding: 10px;
+    }
+
+    #logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        max-height: 100%;
+        width: auto;
+    }
+    
     #nav-principal{
         flex-direction: row;
         align-items: flex-start;
-        gap: 40px;
+        margin-right: 10px;
+        padding: 10px;
     }
-    
+
     .menu{
+        display: flex;
         flex-direction: row;
+        align-items: flex-start;
         width: 128px;
         height: 72px;
     }
 
     #entrada{
+        position: relative;
         height: 50vh;
+        padding: 10px 0;
+        border: 1px solid red;
+        margin-bottom: 2% 0;
+    }
+
+    #texto{
+        position: relative;
+        width: 100%;
+        height: 70%;
     }
     
     #texto textarea{
-        padding: 20px;
+        left: 2%;
+        top: 1%;
         width: 96%;
-        height: 80%;
-        top: 2%;
+        height: 100%;
     }
     
-    #aviso{
-        top: 85%;
+    #aviso{ 
+        top: 72%;
+        width: auto;
+        height: 5%;
     }
     
     #botoes{
-        top: 95%;
-        justify-content: center;
-    }
-    
-    #botoes button{
-        width: 35%;
-        height: 40px;
-    }
-     
-    #botoes span{
-        line-height: 2px;
+        left: 2%;
+        top: 81%;
     }
 
     #saida{
-        position: absolute;
-        top: 66%;
-        left: 50%;
-        transform: translate(-50%);
-        height: 25vh;
-        width: 80vw;
+        position: relative;
+        border: 1px solid red;
+        margin-top: 10px;
+        width: 100%;
+        height: 32vh;
+        background: #262626;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.25);
+        border-radius: 32px;
+    }
+    
+    #saida img{
+       display: none;
     }
     
     #mensagem{
-        position: absolute;
-        width: 80%;
-        height: 80px;
+        width: 100%;
+        height: auto;
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
     }
     
     #titulo-mensagem{
-        height: 20px;
-        line-height: 200%;
+        font-size: 30px;
+        height: auto;
     }
     
     #instrucao-mensagem{
-        width: 100%;
-        height: 20px;
-        line-height: 300%;
-    }
-
-    #img-saida{
-        display: none;
-    }
-}
-
-@media (max-width: 767.98px) {
-    #controladores{
-        flex-direction: row;
-        width: 100vw;
-        height: auto;
-        padding: 40px  40px 0px 40px ;
-    }
-
-    #img-controladores button{
-        width: 80px;
-        height: 80px;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        flex: none;
-        order: 0;
-        flex-grow: 0;
-        margin: 0 auto;
-        outline: none;
-    }
-    
-    .menu{
-        flex-direction: row;
-        width: 128px;
-        height: 72px;
-        float: left;
-        box-sizing: border-box;
-        margin: 10px;
-    }
-
-    #entrada{
-        height: 50vh;
-        clear: both;
-    }
-    
-    #botoes{
-        top: 90%;
-        justify-content: center;
-    }
-    
-    #botoes button{
-        width: 45%;
-        height: 40px;
-    }
-     
-    #botoes span{
         font-size: 20px;
-        line-height: 1px;
-    }
-
-    #saida{
-        position: absolute;
-        top: 66%;
-        left: 50%;
-        transform: translate(-50%);
-        height: 25vh;
-        width: 80vw;
-    }
-    
-    #mensagem{
-        position: absolute;
-        width: 80%;
-        height: 80px;
-        left: 50%;
-        top: 25%;
-        transform: translate(-50%,-25%);
-    }
-    
-    #titulo-mensagem{
-        width: 100%;
         height: auto;
-        line-height: 150%;
     }
     
-    #instrucao-mensagem{
-        width: 100%;
-        height: auto;
-        line-height: 150%;
-    }
-
-    #img-saida{
+    #texto-saida{
         display: none;
     }
-}
+    
+    #texto-saida textarea{
+        border: 1px solid red;
+        position: absolute;
+        width: 96%;
+        height: 70%;
+        top: 1%;
+    }
+    
+    #texto-saida button{
+        top: 75%;
+        width: 35%;
+    }
+ }
