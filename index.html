@@ -16,6 +16,7 @@
         <section>
             <div class="container">
                 <div class="row">
+                    <!-- Barra de navegação -->
                     <nav id="controladores" class="col-lg-1 navbar navbar-expand-sm navbar-light">
                         <div class="container-img">
                             <a id="link-img" href="https://www.instagram.com/code_alvorecer/"><img src="./Imagens/Code_Alvorecer.png" id="logo"  class="img-fluid" alt="code_alvorecer" title="code_alvorecer"></a>
@@ -27,13 +28,14 @@
                         </div>
                        
                         <div class="collapse navbar-collapse" id="nav-principal">
-
+                            <!-- Grupo de botões de controle -->
                             <div class="menu">
                                 <button onclick="trocaEstado('escrever'), controleBotao()" id="escrever" type="button" class="icone"></button>
     
                                 <button onclick="trocaEstado('voz'), controleBotao()" id="voz" type="button"  class="icone"></button>
                             </div>
-    
+                            
+                            <!-- Grupo de botões de estilo -->
                             <div class="menu">
                                 <button onclick="updateCSS('Code_Alvorecer')" id="code_alvorecer" type="button"  class="icone"></button>
     
@@ -44,6 +46,7 @@
 
                     </nav>
 
+                    <!-- Aviso para entrada de texto -->
                     <div id="entrada" class="col-lg-7">
                         <div id="texto">
                             <textarea onkeyup="detectaTexto()" id="texto-entrada" placeholder="Digite seu texto"></textarea>
@@ -59,6 +62,7 @@
                             </div>
                         </div>
 
+                        <!-- Botões de criptografar e descriptografar -->
                         <div id="botoes">
                             <button onclick="Criptografar()" id="criptografar" type="button"><span>Criptografar</span></button>
 
@@ -67,6 +71,7 @@
                         
                     </div>
 
+                   <!-- Área de saída --> 
                    <div id="saida" class="col-lg-4">
                         <div id="img-saida">
                             <img src="./Imagens/Alvorecer_figura.svg" class="img-fluid" alt="">
@@ -87,10 +92,6 @@
         </section>
     </main>
 
-
-
-
-  
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,622 +1,684 @@
 *{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Inter'; /* Define a fonte 'Inter' para todos os elementos */
+    font-style: normal; /* Define o estilo da fonte como normal para todos os elementos */
+    font-weight: 400; /* Define o peso da fonte como 400 (normal) para todos os elementos */
 }
 
 body,html{
-    height: 100%;
-    background: #000;
+    height: 100%; /* Define a altura do body e html como 100% */
+    background: #000; /* Define o fundo do body e html como preto (#000) */
 }
 
 section{
-    height: 100vh;
-    background: #000;
-    color: #fff;
+    height: 100vh; /* Define a altura da section como 100% da altura da viewport */
+    background: #000; /* Define o fundo da section como preto (#000) */
+    color: #fff; /* Define a cor do texto dentro da section como branco (#fff) */
 }
 
 .cursor {
-    position: fixed;
-    display: inline-block;
-    font-size: 20px;
-    color: #fff;
+    position: fixed; /* Define a posição do elemento como fixa */
+    display: inline-block; /* Permite que o elemento seja exibido em linha */
+    font-size: 20px; /* Define o tamanho da fonte como 20px */
+    color: #fff; /* Define a cor do texto como branco (#fff) */
 }
 
 ::selection{
-    background-color: #fff; /* Cor de fundo da seleção */
-    color: #000; /* Cor do texto selecionado */
+    background-color: #fff; /* Define a cor de fundo da seleção como branco (#fff) */
+    color: #000; /* Define a cor do texto selecionado como (#000) */
 }
 
 .selection-alura::selection{
-    background-color: #0A3871;
-    color: #fff;
+    background-color: #0A3871; /* Define a cor de fundo da seleção com a classe 'selection-alura' como azul escuro */
+    color: #fff; /* Define a cor do texto de seleção com a classe 'selection-alura' como branco (#fff)*/
 }
 
 ::placeholder{
-    color: #fff;
+    color: #fff; /* Define a cor do texto do placeholder como branco (#fff) */
 }
 
 .placeholder-alura::placeholder{
-    color: #0A3871;
+    color: #0A3871; /* Define a cor do texto do placeholder com a classe 'placeholder-alura' como azul-escuro */
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 10px; /* Define a largura da scrollbar como 10px */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 5px;
+    background-color: #888; /* Define a cor de fundo do 'polegar' da scrollbar com cinza-escuro (#888) */
+    border-radius: 5px; /* Define o raio da borda do 'polegar' da scrollbar como 5px */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+    background-color: #555; /* Define a cor de fundo do 'polegar' da scrollbar quando hover como cinza médio (#555) */
 }
 
 .alura-scrollbar-thumb::-webkit-scrollbar-thumb {
-    background-color: #0A3871;
+    background-color: #0A3871; /* Define a cor de fundo 'polegar' da scrollbar com a classe 'alura-scrollbar-thumb' como azul-escuro (#0A3871) */
 }
 
 .alura-scrollbar-thumb-hover::-webkit-scrollbar-thumb:hover {
-    background-color: #0e51a8;
+    background-color: #0e51a8; /* Define a cor de fundo do 'polegar' da scrollbar com a classe 'alura-scrollbar-thumb-hover' quando hover como azul-claro (#0e51a8) */
 }
 
+/* Estilos para o seletor #controladores */
 #controladores{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    height: 100vh;
-    padding: 40px 0;
+    display: flex; /* Exibe os elementos internos em linha */
+    flex-direction: column; /* Define a direção dos elementos interno como coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    height: 100vh; /* Define a altura do elemento como 100% da altura do viewport */
+    padding: 40px 0; /* Define o espaçamento interno superior e inferior como 40 pixels */
 }
 
+/* Estilos para o seletor #nav-principal */
 #nav-principal{
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 40px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    flex-direction: column; /* Define a direção dos elementos internos como coluna */
+    align-items: flex-start; /* Alinha os elementos à esquerda horizontalmente */
+    gap: 40px; /* Define o espaçamento vertical entre os elementos como 40 pixels */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Aplica um efeito de sombra nos elementos */
 }
 
+/* Estilos para o seletor #logo */
 #logo{
-   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Aplica um efeito de sombra no elemento */
 }
 
+/* Estilos para o seletor .menu */
 .menu{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px;
-    gap: 16px;
-    flex: none;
-    flex-grow: 0;
-    margin: 20px auto;
-    width: 72px;
-    height: 128px;
-    background: #262626;
-    border-radius: 800px;
+    display: flex; /* Exibe os elementos internos em linha */
+    flex-direction: column; /* Define a direção dos elementos internos como coluna */
+    align-items: flex-start; /* Alinha os elementos à esquerda horizontal */
+    padding: 16px; /* Define o espaçamento interno entre os elementos como 16 pixels*/
+    gap: 16px; /* Define o espaçamento vertical entre os elementos como 16 pixels */
+    flex: none; /* Impede o crescimento do elemento em relação aos outro elementos */
+    flex-grow: 0; /* Impede o crescimento do elemento em relação aos outros elementos */
+    margin: 20px auto; /* Define as margens superior e inferior como 20 pixels e as margens esqueda e direita como automáticas */
+    width: 72px; /* Define a largura do elemento como 72 pixels */
+    height: 128px; /* Define a altura do elemento como 128 pixels */
+    background: #262626; /* Define a cor do fundo do elementos como cinza-escuro (#262626) */
+    border-radius: 800px; /* Define o raio de borda como 800 pixels, tornando o elemento circular */
 }
 
+/* Estilos para botões dentro de #controladores */
 #controladores button{
-    outline: none;
+    outline: none; /* Remove o contorno ao redor dos botões */
 }
 
+/* Estilos para os botões com a classe .icone */
 button.icone{
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-    transition: background 0.7s;
+    position: relative; /* Define a posição do botão como relativa */
+    width: 40px; /* Define a largura do botão como 40 pixels */
+    height: 40px; /* Define a altura do botão como 40 pixels */
+    border-radius: 50%; /* Define o raio de borda como 50%, tornando o botão circular */
+    border: 0; /* Remove a borda do botão */
+    background: transparent; /* Define o fundo do botão como transparente */
+    cursor: pointer; /* Altere o cursor ao passar sobre o botão */
+    transition: background 0.7s; /* Adiciona uma transição suave 0.7 segundos à propriedade de fundo */
 }
 
+/* Estilo para o seletor #escrever */
 #escrever{
-    background: url(../Imagens/Alvorecer_Texto_Black.svg),#fff;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../Imagens/Alvorecer_Texto_Black.svg),#fff; /* Define o fundo com uma imagem e a cor branca (#fff) */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
 }
 
+/* Estilo para o seletor #voz */
 #voz{
-    background: url(../Imagens/Voz_White.svg),transparent;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../Imagens/Voz_White.svg),transparent; /* Define o fundo com uma imagem e transparência */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
 }
 
+/* Estilo para o seletor #code_alvorecer */
 #code_alvorecer{
-    background: url(../Imagens/Alvorecer_Icon_Black.svg),#fff;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../Imagens/Alvorecer_Icon_Black.svg),#fff; /* Define o fundo com uma imagem e a cor branca (#fff) */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
 }
 
+/* Estilo para o seletor #alura */
 #alura{
-    background: url(../Imagens/Alura_Icon_White.svg),transparent;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../Imagens/Alura_Icon_White.svg),transparent; /* Define o fundo com uma imagem e transparência */
+    background-repeat: no-repeat; /* Impede a repetição da imagem e fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
 }
 
+/* Estilo para o seletor #entrada */
 #entrada{
-    padding: 40px 0;
+    padding: 40px 0; /* Define o espaçamento interno superior e inferior como 40 pixels e nenhuma margem esqueda ou direta */
 }
 
+/* Estilo textarea dentro de #texto */
 #texto textarea{
-    position: absolute;
-    width: 96%;
-    height: 65%;
-    left: 2%;
-    top: 15%;
-    font-size: 32px;
-    line-height: 150%;
-    padding-left: 10px;
-    color: #fff;
-    border: 0;
-    background: transparent;
-    resize: none;
-    outline: none;
+    position: absolute; /* Define a posição absoluta do elementos */
+    width: 96%; /* Define a largura do elemento como 96% do elemento pai */
+    height: 65%; /* Define a altura do elemento como 65% do elemento pai */
+    left: 2%; /* Define a posição horizontal do elemento como 2% do elemento pai */
+    top: 15%; /* Define a posição vertical do elemento como 15% do elemento pai */
+    font-size: 32px; /* Define o tamanho da fonte como 32 pixels */
+    line-height: 150%; /* Define a altura da linha como 150% do tamanho da fonte */
+    padding-left: 10px; /* Define o espaçamento interno esquerdo como 10 pixels */
+    color: #fff; /* Define a cor do texto como branco (#fff) */
+    border: 0; /* Remove a borda do elemento */
+    background: transparent; /* Define o fundo do elemento como transparente */
+    resize: none; /* Impede o redimensionamento do elemento */
+    outline: none; /* Remove o contorno ao redor do elemento */
 }
 
+/* Estilo para o seletor #aviso */
 #aviso{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
+    display: flex; /* Define o elemento como um container flex */
+    flex-direction: row; /* Define a direção dos itens como horizontal */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 0px; /* Remove o espaçamento interno */
+    gap: 8px; /* Define o espaçamento entre os itens como 8 pixels */
 
-    position: absolute;
-    width: 252px;
-    height: 18px;
-    left: 2%;
-    top: 81%;
+    position: absolute; /* Define a posição absoluta do elemento */
+    width: 252px; /* Define a largura do elemento como 252 pixels */
+    height: 18px; /* Define a altura do elemento como 18 pixeles */
+    left: 2%; /* Define a posição horizontal do elemento como 2% do elemento pai */
+    top: 81%; /* Define a posição vertical do elemento como 81% do elemento pai */
 }
 
+/* Estilo img dentro de #aviso */
 #aviso img{
-    width: 16px;
-    height: 16px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    width: 16px; /* Define a largura da imagem como 16 pixels */
+    height: 16px; /* Define a altura da imagem como 16 pixels */
+    flex: none; /* Impede a flexibilidade do elemento */
+    order: 0; /* Define a ordem do elemento como 0 */
+    flex-grow: 0; /* Impede o crescimento flexível do elemeneto */
 }
 
+/* Estilo span dentro de #aviso */
 #aviso span{
-    width: 228px;
-    height: 18px;
-    font-size: 12px;
-    line-height: 150%;
-    opacity: 0.8;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    width: 228px; /* Define a largura do elemento como 228 pixels */
+    height: 18px; /* Define a altura do elemento como 18 pixels */
+    font-size: 12px; /* Define o tamanho da fonte como 12 pixels */
+    line-height: 150%; /* Define a altura da linha como 150% do tamanho da fonte */
+    opacity: 0.8; /* Define a opacidade do elemento como 0.8 */
+    flex: none; /* Impede a flexibilidade do elemento */
+    order: 1; /* Define a ordem do elemento como 1 */
+    flex-grow: 0; /* Impede o crescimento flexível do elemento */
 }
 
+/* Estilo para o seletor #botoes */
 #botoes{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
+    display: flex; /* Define o elemento como um container flex */
+    flex-direction: row; /* Define a direção do itens como horizontal */
+    align-items: flex-start; /* Alinha os itens ao topo do conteiner */
+    padding: 0px; /* Remove o espaçamento interno */
+    gap: 24px; /* Define o espaçamento entre os itens como 24 pixels */
 
-    position: absolute;
-    width: 96%;
-    height: 67px;
-    left: 2%;
-    top: 86%;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute; /* Define a posição absoluta do elemento */
+    width: 96%; /* Define a largura do elemento como 96% do elemento pai */
+    height: 67px; /* Define a altura do elemento como 67 pixels */
+    left: 2%; /* Define a posição horizontal do elemento como 2% do elemento pai */
+    top: 86%; /* Define a posição vertical do elemento como 86% do elemento pai */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Aplica uma sombra ao elemento */
 }
 
+/* Estilo botões dentro de #botoes */
 #botoes button{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
+    display: flex; /* Define o elemento como um container flex */
+    flex-direction: row; /* Define a direção dos itens como horizontal */
+    align-items: flex-start; /* Alinha os itens ao topo do container */
+    padding: 24px; /* Define o espaçamento interno do botão como 24 pixels */
+    gap: 8px; /* Define o espaçamento entre os itens como 8 pixels */
 
-    width: 48%;
-    height: 67px;
+    width: 48%; /* Define a largura do botão como 48% do elemento pai */
+    height: 67px; /* Define a altura do botão como 67 pixels */
 
-    flex: none;
-    flex-grow: 0;
+    flex: none; /* Impede a flexibilidade do elemento */
+    flex-grow: 0; /* Impede o crescimento flexível do elemento */
 
-    border: 0;
-    border-radius: 24px;
-    outline: none;
+    border: 0; /* Remove a borda do botão */
+    border-radius: 24px; /* Define o raio da borda do botão como 24 pixels */
+    outline: none; /* Remove o contorno do botão */
 
-    cursor: pointer;
+    cursor: pointer; /* Define o cursor do mouse como um ponteiro */
 }
 
+/* Estilo para o botão dentro do seletor #criptografar */
 #botoes button#criptografar{
-    color: #000;
-    background: #fff;
+    color: #000; /* Define cor do texto como preto (#000) */
+    background: #fff; /* Define o fundo do botão como branco (#fff) */
 }
 
+/* Estilo para o botão dentro do seletor #descriptografar */
 #botoes button#descriptografar{
-    color: #fff;
-    border: 1px solid #FFFFFF;
-    background: #000;
+    color: #fff; /* Define a cor do texto como branco (#fff) */
+    border: 1px solid #FFFFFF; /* Define um borda branca (#fff) de 1 pixel */
+    background: #000; /* Define o fundo do botão como preto (#000) */
 }
 
+/* Estilo span dentro de #botoes */
 #botoes span{
-    width: 280px;
-    height: 19px;
-    font-size: 20px;
-    line-height: 19px;
-    text-align: center;
+    width: 280px; /* Define a largura do elemento como 280 pixels */
+    height: 19px; /* Define a altura do elemento como 19 pixels */
+    font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
+    line-height: 19px; /* Define a altura da linha como 19 pixels */
+    text-align: center; /* Centraliza o texto horizontalmente */
 }
 
+/* Estilo para o seletor #saida */
 #saida{
-    margin: 20px 0;
-    background: #262626;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.25);
-    border-radius: 32px;
+    margin: 20px 0; /* Define a margem superior e inferior como 20 pixels e a margem esquerda ou direita como 0 */
+    background: #262626; /* Define o fundo como uma cor cinza-escura (#262626) */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.25); /* Aplica uma sombra ao elemento */
+    border-radius: 32px; /* Define o raio da borda como 32 pixels */
 }
 
+/* Estilo img dentro de #saida */
 #saida img{
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%,-30%);
-    width: 70%;
+    position: absolute; /* Define a posição absoluta do elemento */
+    left: 50%; /* Define a posição horizontal do elemento como 50% do elemento pai */
+    top: 30%; /* Define a posição vertical do elemento como 30% do elemento pai */
+    transform: translate(-50%,-30%); /* Aplica uma transformação para centralizar o elemento */
+    width: 70%; /* Define a largura da imagam como 70% do elemento pai */
 }
 
+/* Estilo para o seletor #mensagem */
 #mensagem{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
+    display: flex;  /* Define o elemento como um container flex */
+    flex-direction: column; /* Define a direção dos itens como vertical */
+    align-items: flex-start; /* Alinha os itens à esqueda do conteiner */
+    padding: 0px; /* Remove o espaçamento interno */
+    gap: 16px; /* Define o espaçamento entre os itens como 16 pixels */
 
-    position: absolute;
-    width: 80%;
-    height: 122px;
-    left: 50%;
-    top: 75%;
-    transform: translate(-50%,-72%);
+    position: absolute; /* Define a posição absoluta do elemento */
+    width: 80%; /* Define a largura do elemento como 80% do elemento pai */
+    height: 122px; /* Define a altura do elemento como 122 pixels */
+    left: 50%; /* Defone a posição horizontal do elemento como 50% do elemento pai */
+    top: 75%; /* Define a posição vertical do elemento como 75% do elemento pai */
+    transform: translate(-50%,-72%); /* Aplica uma transformção para centralizar o elemento */
 }
 
+/* Estilo para o seletor #titulo-mensagem */
 #titulo-mensagem{
-    width: 80%;
-    height: 58px;
-    font-size: 24px;
-    line-height: 120%;
-    margin: 0 auto;
-    text-align: center;
+    width: 80%; /* Define a largura do elemento como 80% do elemento pai */
+    height: 58px; /* Define a altura do elemento como 58 pixels */
+    font-size: 24px; /* Define o tamanho da fonte como 24 pixels */
+    line-height: 120%; /* Define a altura da linha como 120% do tamanho da fonte */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
+/* Estilo para o seletor #instrucao-mensagem */
 #instrucao-mensagem{
-    width: 80%;
-    height: 58px;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-    margin: 0 auto;
+    width: 80%; /* Define a largura do elemento como 80% do elemento pai */
+    height: 58px; /* Define a altura do elemento como 58 pixels */
+    font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
+    line-height: 150%; /* Define a altura da linha como 150% do tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
 }
 
+/* Estilo para o seletor #texto-saida */
 #texto-saida{
-    display: none;
+    display: none; /* Esconde o elemento */
 }
 
+/* Estilo textarea dentro de #texto-saida */
 #texto-saida textarea{
-    position: absolute;
-    width: 96%;
-    height: 82.5%;
-    left: 2%;
-    top: 3%;
-    font-size: 32px;
-    line-height: 150%;
-    padding-left: 10px;
-    color: #fff;
-    border: 0;
-    background: transparent;
-    resize: none;
-    outline: none;
+    position: absolute; /* Define a posição absoluta do elemento */
+    left: 2%; /* Define a posição horizontal do elemento como 2% do elemento pai */
+    top: 3%; /* Define a posiçãovertical do elemento como 3% do elemento pai */
+    width: 96%; /* Define a largura do elemento como 96% do elemento pai */
+    height: 82.5%; /* Define a altura do elemento como 82.5% do elemento pai */
+    font-size: 32px; /* Define o tamanho da fonte como 32 pixels */
+    line-height: 150%; /* Define a altura da linha como 150% do tamanho da fonte */
+    padding-left: 10px; /* Define o preenchimento interno esquerdo como 10 pixels */
+    color: #fff; /* Define a cor do texto como branco (#fff) */
+    border: 0; /* Remove a borda */
+    background: transparent; /* Define o fundo como transparente */
+    resize: none; /* Desabilita o redimensionamento do textarea */
+    outline: none; /* Remove o controno ao ganhar foco */
 }
 
+/* Estilo botoes dentro de #texto-saida */
 #texto-saida button{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
+    display: flex; /* Aplica o modelo flex para o elemento */
+    flex-direction: row; /* Define a direção do flex como linha */
+    align-items: flex-start; /* Alinha os itens do início do eixo transversal */
+    flex: none; /* Impede que o botão cresça além do seu tamanho original */
+    flex-grow: 0; /* Impede que o botão cresça além do seu tamanho original */
+    padding: 24px; /* Define o preenchimento interno do botão como 24 pixels */
+    gap: 8px; /* Define o espaçamento entre os ites dentro do botão como 8 pixels */
 
-    position: absolute;
-    top: 88%;
-    left: 50%;
-    transform: translate(-50%);
+    position: absolute; /* Define a posição absoluta do elemento */
+    top: 88%; /* Define a posição vertical do elemento como 88% do elemento pai */
+    left: 50%; /* Define a posição horizontal do elemento como 50% do elemento pai */
+    transform: translate(-50%); /* Translada o elemento -50% do seu próprio tamanho horizontal */
 
-    width: 80%;
-    height: 50px;
+    width: 80%; /* Define a largura do botão como 80% do elemento pai */
+    height: 50px; /* Define a altura do botão como 50 pixels */
 
-    flex: none;
-    flex-grow: 0;
-
-    border-radius: 24px;
-    border: 1px solid #FFFFFF;
-    color: #fff;
-    background: transparent;
-    cursor: pointer;
-    outline: none;
+    border-radius: 24px; /* Define o raio de borda do botão como 24 pixels */
+    border: 1px solid #FFFFFF; /* Define uma borda sólida de 1 pixel com cor branca (#fff) */
+    color: #fff; /* Define a cor do texto como branco (#fff) */
+    background: transparent; /* Define o funco como transparente */
+    cursor: pointer; /* Altera o cursor do mouse quando passa sobre o botão */
+    outline: none; /* Remove o contorno ao ganhar foco */
 }
 
+/* Estilo span dentro de #texto-saida */
 #texto-saida span{
-    width: 280px;
-    height: 19px;
-    font-size: 20px;
-    line-height: 1px;
-    text-align: center;
+    width: 280px; /* Define a largura do eleemnto como 280 pixels */
+    height: 19px; /* Define a altura do elemento como 19 pixels */
+    font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
+    line-height: 1px; /* Define a altura da linha como 1 pixel */
+    text-align: center; /* Alinha o texto ao centro */
 }
 
 /*Extra small devices (portrait phones, menor que 576px)*/
 @media (max-width: 575.98px) {
+    /* Estilo para o seletor #controladores */
     #controladores{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 10vh;
-        padding: 40px 0;
-        margin: 2% 0;
+        display: flex; /* Aplica o modelo flex para o elemento */
+        flex-direction: row; /* Define a direção do flex como linha */
+        align-items: center; /* Alinha os itens ao centro verticalmente */
+        height: 10vh; /* Define a altura como 10% do viewport */
+        padding: 40px 0; /* Define o preenchimento superior e inferior como 40 pixels e o preenchimento esquerdo e direito como 0 */
+        margin: 2% 0; /* Define as margens superior e inferior como 2% e margens horizontais como 0 */
     }
 
+    /* Estilo para o seletor .container-img */
     .container-img{
-        position: relative;
-        height: 10vh;
-        width: 10vw;
+        position: relative; /* Define a posição relativa do elemento */
+        height: 10vh; /* Define a altura como 10% da altura do viewport */
+        width: 10vw; /* Define a largura como 10% da largura do viewport */ 
         padding: 10px;
     }
 
+    /* Estilo para o seletor #logo */
     #logo{
-        position: absolute;
-        top: 0%;
-        left: 0;
-        transform: translate(50%,-50%);
-        max-height: 100%;
-        width: auto;
+        position: absolute; /* Define a posição absoluta do elemento */
+        top: 0; /* Define a posição vertical do elemento como 0 do elemento pai */
+        left: 0; /* Define a posição horizontal do elemento como 0 do elemento pai*/
+        transform: translate(50%,-50%); /* Translada o elemento como 50% do seu próprio tamanho horizontal e -50% do seu próprio tamanho vertical */
+        max-height: 100%; /* Define a altura máxima do elemento como 100% */
+        width: auto; /* Define a largura do elemento automaticamente */
     }
 
+    /* Estilo para o seletor #img-hamburguer */
     #img-hamburguer{
-        position: absolute;
-        top: 0%;
-        right: 0;
-        transform: translate(-50%,-50%);
-        max-height: 100%;
-        width: auto;
+        position: absolute; /* Define a posição absoluta do elemento */
+        top: 0%; /* Define a posção vertical do elemento como 0 do elemento pai */
+        right: 0; /* Define a posição horizontal do elemento como 0 do elemento pai */
+        transform: translate(-50%,-50%); /* Translada o elemento como -50% do seu próprio tamanho horizontal e -50% do seu próprio tamanho vertical */
+        max-height: 100%; /* Define a altura máxima do elemento como 100% */
+        width: auto; /* Define a largura do elemento automaticamente */
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Define uma sombra para o elemento */
     }
 
+    /* Estilo para o seletor #nav-principal */
     #nav-principal{
-        flex-direction: row;
-        align-items: flex-start;
-        margin-right: 10px;
-        padding: 10px;
-        z-index: 1;
+        flex-direction: row; /* Define o modelo flex como linha */
+        align-items: flex-start; /* Alinha os itens do início do eixo transversal */
+        margin-right: 10px; /* Define a margem direita como 10 pixels */
+        padding: 10px; /* Define o preenchimento interno no elelmento como 10 pixels */
+        z-index: 1; /* Define a ordem de empilhamento do elemento */
     }
-    
+   
+    /* Estilo para o seletor .menu */
     .menu{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        width: 128px;
-        height: 72px;
-        margin: 10px 20px;
-        float: left;
+        display: flex; /* Aplica o modelo flex para o elemento */
+        flex-direction: row; /* Define a direção do flex como linha */
+        align-items: flex-start; /* Alinha os itens ao início do eixo transversal */
+        width: 128px; /* Define a largura do elemento como 128 pixels */
+        height: 72px; /* Define aaltura do elemento como 72 pixels */
+        margin: 10px 20px; /* Define as margens superior e inferior como 10 pixels e as margens esqueda e direita como 20 pixels */
+        float: left; /* Define o elemento para flutuar à esquerda */
     }
     
+    /* Estilo para botoes dentro do seletor #controladores */
     #controladores button{
-        outline: none;
+        outline: none; /* Remove o contorno ao ganhar foco */
     }
 
-    #img-hamburguer{
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    }
-
+    /* Estilo para botoes com o seletor .navbar-toggler.navbar-light */
     button.navbar-toggler.navbar-light{
-        border: 0;
+        border: 0; /* Remove o a borda do botão */
     }
 
+    /* Estilo para o seletor #entrada */
     #entrada{
-        position: relative;
-        height: 50vh;
-        padding: 10px 0;
-        margin-bottom: 2%;
-        
+        position: relative; /* Define a posição relativa do elemento */
+        height: 50vh; /* Define a altura do elemento como 50% da altura do viewport */
+        padding: 10px 0; /* Define o preeenchimento superior e inferior como 10 pixels e o preenchimento esquerdo e direito como 0 */
+        margin-bottom: 2%; /* Define a margem infeiror como 2% */
     }
     
+    /* Estilo textarea dentro de #texto */
     #texto textarea{
-        left: 2%;
-        top: 1%;
-        width: 96%;
-        height: 70%;
+        left: 2%; /* Define a posição horizontal do elemento como 2% do elemento pai */
+        top: 1%; /* Define a posição vertical do elemento como 1% do elemento pai */
+        width: 96%; /* Define a largura do elemento como 96% do elemento pai */
+        height: 70%; /* Define a alatura do elemento como 70% do elemento pai */
     }
     
+    /* Estilo para o seletor #aviso */
     #aviso{
-        top: 73%;
-        width: auto;
-        height: 5%;
+        top: 73%; /* Define a posição vertical do elemento como 73% do elemento pai */
+        width: auto; /* Define a largura do elemento automaticamente */
+        height: 5%; /* Define a altura do elemento como 5% do elemento pai */
     }
     
+    /* Estilo para o seletor #botoes */
     #botoes{
-        position: absolute;
-        width: 96%;
-        height: 67px;
-        left: 1%;
-        top: 81%;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        margin: 0 auto;
+        position: absolute; /* Define a posição absoluta do elemento */
+        width: 96%; /* Define a largura do elemento como 96% do elemento pai */
+        height: 67px; /* Define a altura do eleemnto como 67 pixels */
+        left: 1%; /* Define a posição horizontal do elemento como 1% do elemento pai */
+        top: 81%; /* Define a posição vertical do elemento como 81% do elemento pai */
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /* Aplica um sombreamento no elemento*/
+        margin: 0 auto; /* Centraliza o elemento horizontalmente */
     }
     
+    /* Estilo span dentro de #botoes e #entrada */
     #entrada #botoes span{
-        width: 100%;
-        height: auto;
-        font-size: 100%;
-        line-height: 19px;
-        text-align: center;
+        width: 100%; /* Define a largura do elemento como 100% do elemento pai */
+        height: auto; /* Define a altura do elemento automaticamente */
+        font-size: 100%; /* Define o tamanho da fonte como 100% */
+        line-height: 19px; /* Define a altura da linha como 19 pixels */
+        text-align: center; /* Alinha o texto ao centro */
     }
 
+    /* Estilo para o seletor #saida */
     #saida{
-        position: relative;
-        margin-top: 20px;
-        width: 100%;
-        height: 32vh;
-        background: #262626;
-        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.25);
-        border-radius: 32px;
+        position: relative; /* Define a posição relativa do elemento */
+        margin-top: 20px; /* Define a margem superior como 20 pixels */
+        width: 100%; /* Define a largura do elemento como 100% do elemento pai */
+        height: 32vh; /* Define a altura do elemento como 32% da altura do viewport */
+        background: #262626; /* Define a cor de funco como preto cinza (#262626) */
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.25); /* Aplica sombreamento no elemento */
+        border-radius: 32px; /* Define o raido da borda do elemento como 32 pixels */
     }
     
+    /* Estilo img dentro de #saida */
     #saida img{
-       display: none;
+       display: none; /* Oculta a imagem dentro do elemento*/
     }
     
+    /* Estilo para o seletor #mensagem */
     #mensagem{
-        width: 100%;
-        height: auto;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
+        width: 100%; /* Define a largura do elemento como 100% do elemento pai */
+        height: auto; /* Define a altura do elemento automaticamente */
+        left: 50%; /* Define a posição horizontal do elemento como 50% do elemento pai */
+        top: 50%; /* Define a posição vertical do elemento como 50% do elemento api */
+        transform: translate(-50%,-50%); /* Translata o elemento -50% do seu próprio tamanho horizontal e -50% do seu próprio tamanho vertical */
     }
     
+    /* Estilo para o seletor #titulo-mensagem */
     #titulo-mensagem{
-        font-size: 30px;
-        height: auto;
+        font-size: 30px; /* Define o tamanho da fonte como 30 pixels */
+        height: auto; /* Define a altura do elemento automaticamente */
     }
     
+    /* Estilo para o seletor #instrucao-mensagem */
     #instrucao-mensagem{
-        font-size: 20px;
-        height: auto;
+        font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
+        height: auto; /* Define a altura do elemento automaticamente */
     }
     
+    /* Estilo para o seletor #texto-saida */
     #texto-saida{
-        display: none;
+        display: none; /* Oculta o elemento */
     }
     
+    /* Estilo textarea dentro de #texto-saida*/
     #texto-saida textarea{
-        position: absolute;
-        width: 96%;
-        height: 70%;
-        top: 1%;
+        position: absolute; /* Define a posção absoluta do elemento */
+        width: 96%; /* Define a largura do elemento como 96% do elemento pai */
+        height: 70%; /* Define a altura do elemento como 70% do elemento pai */
+        top: 1%; /* Define a posição vertical do elemento como 1% do elemento pai */
     }
     
+    /* Estilo botões dentro de #texto-saida*/
     #texto-saida button{
-        top: 75%;
-        width: 80%;
+        top: 75%; /* Define a posição vertical do elemento como 75% do elemento pai */
+        width: 80%; /* Define a largura do elemento como 80% do elemento pai */
     }
 }
 
 
 /*Medium devices (tablets, 768px e maiores)*/
 @media (min-width: 576px) and (max-width: 991.98px) {
+    /* Estilo para o seletor #controladores */
     #controladores{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 10vh;
-        padding: 40px 0;
-        margin: 2% 0;
+        display: flex; /* Aplica o modelo flex para o elemento */
+        flex-direction: row; /* Define a diração do flex como linha */
+        align-items: center; /* Alinh os itens ao centro verticalmente */
+        height: 10vh; /* Define a altura como 10% da altura do viewport */
+        padding: 40px 0; /* Define o preenchimento inferior e superior como 40 pixels e o preenchimento esquerdo e direito como 0 */
+        margin: 2% 0; /* Define as margens superior e inferior como 2% e a margem esquerda e direita como 0 */
     }
 
+    /* Estilo para o seletor .container-img */
     .container-img{
-        position: relative;
-        height: 13vh;
-        width: 10vw;
-        padding: 10px;
+        position: relative; /* Define a posição como relativa */
+        height: 13vh; /* Define a altura como 13% da altura do viewport */
+        width: 10vw; /* Define a largura como 1% da largura do viewport */
+        padding: 10px; /* Define o preenchimento interno como 10 pixels */
     }
 
+    /* Estilo para o seletor #logo */
     #logo{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        max-height: 100%;
-        width: auto;
+        position: absolute; /* Define a posição como absoluta */
+        top: 50%; /* Define a posição vertical como 50% */
+        left: 50%; /* Define a posição horizontal como 50% */
+        transform: translate(-50%,-50%); /* Aplica a translação para centralizar o elemento */
+        max-height: 100%; /* Define a altura máxima como 100% */
+        width: auto; /* Define a largura automática */
     }
     
+    /* Estilo para o seletor #nav-principal */
     #nav-principal{
-        flex-direction: row;
-        align-items: flex-start;
-        margin-right: 10px;
-        padding: 10px;
+        flex-direction: row; /* Define a direção do flex como linha */
+        align-items: flex-start; /* Alinha os itens ao topo verticalmente */
+        margin-right: 10px; /* Define a margem direita como 10 pixels */
+        padding: 10px; /* Define o preenchimento interno como 10 pixels */
     }
 
+    /* Estilo para o seletor .menu */
     .menu{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        width: 128px;
-        height: 72px;
+        display: flex; /* Aplica o modelo flex para o elemento */
+        flex-direction: row; /* Define a direção do flex como linha */
+        align-items: flex-start; /* Alinha os itens ao topo verticalmente */
+        width: 128px; /* Define a altura como 128 pixels */
+        height: 72px; /* Define a altura como 72 pixels */
     }
 
+    /* Estilo para o seletor #entrada */
     #entrada{
-        position: relative;
-        height: 50vh;
-        padding: 10px 0;
-        margin-bottom: 2% 0;
+        position: relative; /* Define a posição como relativa*/
+        height: 50vh; /* Define a altura como 50% da altura do viewport */
+        padding: 10px 0; /* Define o preenchimento superior e inferior como 10 pixels e o preenchimento esquerdo e direito como 0 */
+        margin-bottom: 2%; /* Define a margem inferior como 2% */
     }
 
+    /* Estilo para o seletor #texto */
     #texto{
-        position: relative;
-        width: 100%;
-        height: 70%;
+        position: relative; /* Define a posição como relativa */
+        width: 100%; /* Define a largura como 100% */
+        height: 70%; /* Define a altura como 70% */
     }
     
+    /* Estilo textarea dentro de #texto */
     #texto textarea{
-        left: 2%;
-        top: 1%;
-        width: 96%;
-        height: 100%;
+        left: 2%; /* Define a posição horizontal como 2% */
+        top: 1%; /* Define a posição vertical como 1% */
+        width: 96%; /* Define a largura como 96% */
+        height: 100%; /* Define a altura como 100% */
     }
     
+    /* Estilo botões dentro de #aviso */
     #aviso{ 
-        top: 72%;
-        width: auto;
-        height: 5%;
+        top: 72%; /* Define a posição superior como 72% */
+        width: auto; /* Define a largura automática */
+        height: 5%; /* Define a altura como 5% */
     }
     
+    /* Estilo botões dentro de #botoes */
     #botoes{
-        left: 2%;
-        top: 81%;
+        left: 2%; /* Define a posição horizontal como 2% */
+        top: 81%; /* Define a posição vertical como 81% */
     }
 
+    /* Estilo botões dentro de #saida */
     #saida{
-        position: relative;
-        margin-top: 10px;
-        width: 100%;
-        height: 32vh;
-        background: #262626;
-        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.25);
-        border-radius: 32px;
+        position: relative; /* Define a posição como relativa */
+        margin-top: 10px; /* Define a margem superior como 10 pixels */
+        width: 100%; /* Define a largura como 100% */
+        height: 32vh; /* Define a altura como 32% da altura do viewport */
+        background: #262626; /* Define o fundo como cinza (#262626) */
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.25); /* Aplica um sombreamento ao elemento */
+        border-radius: 32px; /* Define o raio do canto como 32 pixels */
     }
     
+    /* Estilo img dentro de #saida */
     #saida img{
-       display: none;
+       display: none; /* Oculta as imagens dentro do elemento */
     }
     
+    /* Estilo botões dentro de #mensagem */
     #mensagem{
-        width: 100%;
-        height: auto;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
+        width: 100%; /* Define a largura como 100% */
+        height: auto; /* Define a altura automática */
+        left: 50%; /* Define a posição horizontal como 50% */
+        top: 50%; /* Define a posição vertical como 50% */
+        transform: translate(-50%,-50%); /* Aplica ums translação de -50% para centralizar o elemento*/
     }
     
+    /* Estilo botões dentro de #titulo-mensagem */
     #titulo-mensagem{
-        font-size: 30px;
-        height: auto;
+        font-size: 30px; /* Define o tamanho da fonte como 30 pixels */
+        height: auto; /* Define a altura automática */
     }
     
+    /* Estilo botões dentro de #instrucao-mensagem */
     #instrucao-mensagem{
-        font-size: 20px;
-        height: auto;
+        font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
+        height: auto; /* Define a altura automática */
     }
     
+    /* Estilo botões dentro de #texto-saida */
     #texto-saida{
-        display: none;
+        display: none; /* Oculta o conteúdo dentro do elemento */
     }
     
+    /* Estilo textarea dentro de #texto-saida */
     #texto-saida textarea{
-        position: absolute;
-        width: 96%;
-        height: 70%;
-        top: 1%;
+        position: absolute; /* Define a posição como absoluta */
+        width: 96%; /* Define a largura como 96% */
+        height: 70%; /* Define a altura como 70% */
+        top: 1%; /* Define a posição vertical como 1% */
     }
     
+    /* Estilo botões dentro de #texto-saida */
     #texto-saida button{
-        top: 75%;
-        width: 35%;
+        top: 75%; /* Define a posição vertical como 75% */
+        width: 35%; /* Define a largura como 35% */
     }
  }
